@@ -1,0 +1,361 @@
+
+
+body {
+            height: 2000px;
+            overflow-x: hidden;
+
+            
+
+
+
+
+}
+.BoxDown {
+
+
+  background-image: linear-gradient(to bottom, #17a2b8, #e7717d );
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.NavBox {
+
+        padding: 8px 68px;
+        cursor: pointer;
+        position: fixed;
+
+
+
+}
+
+
+
+.NavNormal {
+
+   width:35px;
+  height: 35px;
+  margin-top: 0px;
+  margin-left: 0px;
+   border-radius: 50%;
+   
+  
+
+
+}
+
+
+
+.NavAnimated {
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+  margin-left: 0px;
+   border-radius: 80%;
+
+   
+    position: fixed;
+  
+  animation-name: Nav;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction:forwards;
+
+}
+
+.NavAnimatedClicked {
+  width: 35px;
+  height: 35px;
+  
+   border-radius: 80%;
+
+   
+  position: fixed;
+  
+  animation-name: NavAnimated;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction:forwards;
+
+}
+
+
+.BoxRight {
+  width: 100vw;
+  height: 100vh;
+  
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.BoxLeft {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100vh;
+  
+  clip-path: polygon(100% 100%, 0 100%, 0 0);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow( 0px 8px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0 8px 6px -6px rgba(0, 0, 0, .7));
+  /* Similar syntax to box-shadow */
+}
+
+/*#FFFAF0*/
+@keyframes Nav {
+   from {background-color: #FFFAF0;  height: 35px; width: 35px; border-radius: 10%;}
+ 
+   to {background-color: #FFFAF0;  height: 100%; width: 100%; border-radius: 0%;}
+}
+
+@keyframes NavAnimated {
+    
+   0% {background-color: #FFFAF0;  height: 100%; width: 100%; border-radius: 0%;}
+
+    90% {background-color:#FFFAF0;  height: 35px; width: 35px; border-radius: 10%;}
+
+   100% {background-color: none;  height: 35px; width: 35px; border-radius: 10%;}
+
+}
+
+.GoogleFont1 {
+
+  font-family: 'Major Mono Display', monospace;
+
+
+}
+
+.GoogleFont2 {
+
+
+ font-family: 'Nixie One', cursive;
+
+
+}
+
+
+ 
+
+
+
+
+.NavBar {
+
+             width: 35px;
+             height: 4px;
+            background-color:#FFFAF0;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+            
+
+}
+
+
+
+
+
+
+.NavBar1 {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+             animation-name: RotLeft;
+            animation-duration: .25s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            
+
+}
+
+.NavBar2 {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+           
+}
+
+.NavBar3 {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+             animation-name: RotRight;
+            animation-duration: .25s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            
+}
+
+
+
+@keyframes RotRight {
+  from { width: 35px; height: 4px;}
+  to { width: 0px; height: 4px;}
+
+}
+
+
+.NavShadow {
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .4));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .4));
+  /* Similar syntax to box-shadow */
+}
+
+.NavBar1Clicked {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+             animation-name: RotLeftClicked;
+            animation-duration: .25s;
+            animation-timing-function: ease-in;
+           animation-fill-mode: forwards;
+           
+
+}
+
+.NavBar2Clicked {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+           
+}
+
+.NavBar3Clicked {
+
+             width: 35px;
+             height: 4px;
+             background-color: black;
+             margin-bottom: 5px;
+             border-radius: 4px; 
+             animation-name: RotRightClicked;
+            animation-duration: .25s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+             
+}
+
+
+@keyframes RotLeftClicked {
+  from {  width: 35px; height: 4px;}
+  to {  width: 0px; height: 4px;}
+
+}
+
+@keyframes RotRightClicked {
+  from {  width: 35px; height: 4px;}
+  to { width: 0px; height: 4px;}
+
+}
+
+
+footer {
+    position: relative;
+    height: 500px;
+    bottom: 0;
+    width: 100%;
+   
+ /* background-image: linear-gradient(to bottom, #17a2b8, #e7717d );
+*/
+}
+
+.SocialLinks {
+            
+           
+          padding-top: 30%;
+
+}
+
+.D2 {
+
+  width:140px;
+  height:200px;
+ position:relative;
+
+  
+}
+
+.shadowDown {
+  -webkit-filter: drop-shadow(18px 10px 22px rgba(0, 0, 0, 1));
+  filter: drop-shadow( 0 8px 10px 22px rgba(0, 0, 0, 1));
+  /* Similar syntax to box-shadow */
+}
+
+.shadowLinks {
+  -webkit-filter: drop-shadow(8px 1px 22px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 8px 10px 6px 2px rgba(0, 0, 0, 1));
+  /* Similar syntax to box-shadow */
+}
+.rotateSun {
+
+  animation-name: Sun;
+  animation-duration: 7s;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+  opacity: .6;
+
+}
+
+.D3 {
+       
+       height: 200px;
+       width: 200px;
+        position: relative;
+       
+
+
+}
+.BirdsMoving {
+
+  animation-name: birds;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+
+}
+
+@keyframes Sun {
+   from {transform: rotate(0deg);}
+ 
+   to {transform: rotate(360deg);}
+}
+@keyframes birds {
+  from {right: 0%;}
+  to {right: 100%;}
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    top: 0;
+}
+header{
+    position: relative;
+    max-width: 1500px;  /* Make 100% for Full Size Box */
+    margin: 0px auto;
+    padding: 2px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo { 
+    color: rgb(255, 255, 255);
+    height: 60px;   /*height of logo */
+    font-size: 36px;
+    line-height: 50px; /* defines the space between two inline elements.  */
+    text-decoration: none;
+    padding: 0 20px;
+    float: left;
+}
+.logo img{
+    position:relative;  /* For sticking Logo at Top #IMPORTANT */
+    width: auto;
+    height: 109px;   /* height of logo */
+    line-height: 0px;  /* defines the space between two inline elements.  */ 
+    text-decoration: none;
+    padding: 0 0px;
+    float: left;
+    top: 0;
+}
+nav{
+    float: right;
+}
+.clearify{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    display: inline-block;
+    margin: 35px 0;
+    padding: 10px 20px;   /* sizing between nav links */
+    text-decoration: none;
+    color: #262626;
+font-size: 20px;
+}
+nav ul li a.active,nav ul li button.active,
+nav ul li a:hover{
+    background: orange;
+    color: #fff;
+    transition: 0.5s;
+}
+nav ul div a button{
+    text-decoration: none;
+    background: orange ;
+    margin: 30px;  /* Make Distance of button from Top */
+    border-radius: 20px;
+    list-style: none;
+    border: none;
+    color: white;
+    padding:15px 24px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 1200px)
+{
+    header
+    {
+        margin: 5px;
+    }
+}
+@media (max-width: 768px)
+{
+.logo img{
+    height: 90px;
+}
+    .menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 25px;
+        border-style: solid;
+        box-shadow: black;
+        border-radius: 9px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+         background:white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* For Boxing and background  */
+        color: #C04118;
+    }
+ .menu-toggle::before
+    {
+        content: '\f0c9';
+        border: black;
+        font-family: fontAwesome;
+        line-height: 40px;
+    } 
+    .menu-toggle.active:before
+    {
+        content: '\f00d';
+    }
+ nav 
+    {
+        display: none;
+    }
+
+ nav.active 
+    {
+        display:block;
+        width: 100%;
+    }
+nav.active ul
+    {
+        display: block;
+        text-align: center;
+   
+    }
+}
+section center
+    {
+        padding: 10%;
+    }
