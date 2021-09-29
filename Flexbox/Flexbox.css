@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.pagewrap{
+    margin: 20px 50px 2px 3px ;
+    display: flex;
+    width: 97%; /* Solved overflow of margin */
+    flex-direction: row;
+    /* border: 20px solid black; */
+}
+.content{
+  width:100%;
+  padding: 50px;
+  margin: 50px;
+  align-items: center;
+  color: rgb(37, 32, 32);
+  transition: transform 2s;
+  animation-name: example;
+  animation-duration: 100s;
+  animation-delay: 0.2s;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+/* @keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: white;}
+  50%  {background-color: blue;}
+  100% {background-color: green;} 
+} */
+
+.content:hover{
+  color: orangered;
+  transform: scale(1.1);
+  /* transform: skewX(-10deg); 
+  transform: rotate(-10deg);  */
+}
+.Content{
+  font-size: 15px;
+  border-left: 2px solid rgb(17, 17, 17);
+}
+.text{
+  padding-left: 20px;
+}
+.text h1{
+  margin-top: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+img{
+  width: 100%;
+}
+@media (max-width: 1071px) {
+  .pagewrap {
+    flex-direction: column;
+    width: 90%;
+  }
+  .content{
+    width: 50%;
+    margin: 12.5%;
+  }
+}
