@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+<style>
+
+    
+.D2 {
+
+width:140px;
+height:200px;
+position:relative;
+
+
+}
+
+
+
+
+.shadowDown {
+  -webkit-filter: drop-shadow(18px 10px 22px rgba(0, 0, 0, 1));
+  filter: drop-shadow( 0 8px 10px 22px rgba(0, 0, 0, 1));
+  /* Similar syntax to box-shadow */
+}
+
+.shadowLinks {
+  -webkit-filter: drop-shadow(8px 1px 22px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 8px 10px 6px 2px rgba(0, 0, 0, 1));
+  /* Similar syntax to box-shadow */
+}
+.rotateSun {
+
+  animation-name: Sun;
+  animation-duration: 7s;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+  opacity: .6;
+
+}
+
+@keyframes Sun {
+   from {transform: rotate(0deg);}
+ 
+   to {transform: rotate(360deg);}
+}
+
+</style>
+
+
+
+
+    </head>
+    <body>
+        <div class="D2 float-right" >
+            <img  class="container-fluid shadowDown rotateSun" src="sun.png"/>
+          </div>
+          
+    </body>
+</html>
