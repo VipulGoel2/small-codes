@@ -3,6 +3,8 @@
     padding: 0;
     overflow-x: hidden;
 }
+
+
 .pagewrap{
     margin: 20px 50px 2px 3px ;
     display: flex;
@@ -10,6 +12,8 @@
     flex-direction: row;
     /* border: 20px solid black; */
 }
+
+
 .content{
   width:100%;
   padding: 50px;
